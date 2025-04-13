@@ -8,6 +8,12 @@ body {
     font-family: "karla", sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .nav {
     background-color: #393939;
     color: #BDBDBD;
@@ -34,9 +40,12 @@ body {
 .card {
     display: flex;
     flex-direction: column;
+    min-width: 300px;
+    max-width: 600px;
+    font-family: "inter", sans-serif;
     color: #BDBDBD;
     padding: 15px;
-    margin: 20px;
+    margin-top: 20px;
     background-color: #393939;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgb(20, 20, 20);
@@ -44,4 +53,9 @@ body {
 
 .card-input {
     margin-top: 5px;
+    height: 1.5rem;
+}
+
+.card-label.date {
+    margin-top: 20px;
 }
